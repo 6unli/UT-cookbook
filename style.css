@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+header h1 {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #28292C;
+    line-height: 70px;
+    text-transform: uppercase;
+    
+}
+    
+header h2 {
+    
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #28292C;
+    text-transform: uppercase;
+    
+}
+
+
+header .header-banner {
+
+    background-image: url("img/Header.jpg");
+    width: 100%;
+    height: calc(100vh - 260px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    margin: auto;
+}
+
+header .logo {
+
+    margin: auto;
+    text-align: center;
+    padding: 40px 0 40px 0;
+
+}
+
+header nav ul {
+
+    display: block;
+    margin: 0 auto;
+    text-align: center; /*IE*/
+    width: fit-content;
+    padding-bottom: 40px;   
+    
+}
+
+header nav ul li {
+    
+    display: inline-block;
+    padding: 16px 40px;
+    
+}
+
+nav ul li a {
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+
+hr {
+
+    border-color: #E19205;
+    border-width: 2px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    
+}
+
+.about-us{
+
+    width: calc(100% - 80px);
+    padding: 40px;
+    margin: 40px 0 16px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-h2 {
+    
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding-bottom: 24px;
+    color: #28292C;
+    text-transform: uppercase;
+    
+}
+
+.about-p {
+    
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #28292C;
+    
+}
+
+.description{
+
+    width: 320px;
+    padding: 40px;
+}
+
+.about-us img {
+    display: none;
+}
+
+.recipes{
+
+    margin: auto;
+    text-align: center;
+    padding: 40px 0 0 0;
+    
+}
+
+.gallery-links {
+
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+    margin: 40px 0 80px 0;
+    
+}
+
+.gallery-image {
+
+    margin: 40px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;  
+    
+} 
+
+.gallery-image img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.post-header {       
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 4px #111111;
+
+    opacity: 1;
+    transition: 0.3s;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+}
+
+.gallery-image:hover .post-header { 
+
+    opacity: 1; 
+    
+}
+
+
+footer {
+
+    width: calc(100% - 80px);
+    padding: 40px;
+    background-color: #28292C;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer ul {
+
+    width: fit-content;
+    padding-left: 0px;
+    
+}
+
+footer ul li {
+    
+    display: block;
+    padding: 0 0 16px 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.footer-sm {
+
+    width: 32px;
+    
+}
+    
+.footer-sm img {
+    
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+@media only screen and (min-width: 950px) {
+    header .header-banner {
+
+        height: calc(100vh - 350px);
+        width: calc(100% - 80px);
+  
+    }   
+  
+    header h1 a {
+  
+        font-size: 80px;
+  
+    }  
+  
+    header h2 {
+  
+        font-size: 24px;
+        margin-top: 20px;
+  
+    }
+
+    hr {
+
+        width: 40%;   
+    }
+
+    .about-us {
+        margin: 80px 0;
+    }
+
+    .about-us img {
+        width: 480px;
+        display: block;
+    }
+
+    .about-p {
+
+        padding-bottom: 64px;
+    }
+
+    .recipes {
+        display: none;
+    }
+
+    .post-header {
+
+        opacity: 0;
+    }
+
+    .gallery-links {
+
+        margin: 80px 0 120px 0;
+
+    }
+
+    footer {
+        width: calc(100% - 160px);
+        padding: 40px 80px;
+    }
+  
+}
+
